@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color:#33475b">
+    <header>
+      <h1 id="title">Genshin Impact<br>Version 3.2 Survey</h1>
+    <p id="description">This survey form will help us determine what changes travelers want in the next update</p>
+    </header>
+    <main>
+      <form id="survey-form">
+	<fieldset name="player-info">
+        <label for="name" id="name-label">Name</label>
+      <input id="name" type="text" placeholder="Enter Your Name" required/>
+      <label for="email" id="email-label">Email</label>
+      <input id="email" type="email" placeholder="Enter Your Email" required/>
+      <label for="number" id="number-label">Age</label>
+      <input id="number" type="number" min="13" max="30" placeholder="Enter your Age"/>
+	</fieldset>
+
+	<fieldset>What platform do you play Genshin Impact
+      <select id="dropdown">
+        <option>(select one)</option>
+        <option>PC</option>
+        <option>Mobile</option>
+        <option>PS4</option>
+        <option>Cloud Gaming</option>
+        </select>
+	</fieldset>
+
+        <fieldset>
+  <p>Would you recommend this game to your friends?</p>
+        <label for="recommend"><input id="recommend" class="inline" type="radio" value="Yes" name="recommend">Yes</label>
+        <label for="not-recommend"><input id="not-recommend" class="inline" type="radio" value="No" name="recommend">No</label>
+</fieldset>
+
+	<fieldset>
+	<p>Are you still willing to continue to progress to your adventure?</p>
+	<label for="dwill"><input type="radio" value="0" name="radiobutton1" id="r1.1" class="inline"> Definitely Willing </input>
+	<label for="vwill"><input type="radio" value="0" name="radiobutton1" id="r2.1" class="inline"> Very Willing </input>
+	<label for="will"><input type="radio" value="0" name="radiobutton1" id="r3.1" class="inline"> Willing </input>
+	<label for="nwill"><input type="radio" value="0" name="radiobutton1" id="r4.1" class="inline"> Not Willing </input>
+	</fieldset>
+
+<fieldset>
+<p>What did you like based on your game experience. <br>(select all that apply)</p>
+        <label for="choice1"><input id="choice1" class="inline" type="checkbox" name="choice1" value="1">Story</label>
+        <label for="choice2"><input id="choice2" class="inline" type="checkbox" name="choice1" value="2">Gameplay</label>
+        <label for="choice3"><input id="choice3" class="inline" type="checkbox" name="choice1" value="3">Character Design</label>
+        <label for="choice4"><input id="choice4" class="inline" type="checkbox" name="choice1" value="4">Graphics</label>
+        <label for="choice5"><input id="choice5" class="inline" type="checkbox" name="choice1" value="5">Scenery</label>
+</fieldset>
+
+<fieldset>
+  <p>What would you like to see on the next version update? <br>(select all that apply)</p>
+  <label for="up1"><input id="up1" class="inline" type="checkbox" name="up1" value="1">More Archon Quest</label>
+  <label for="up2"><input id="up2" class="inline" type="checkbox" name="up2" value="2">Permanent End game</label>
+  <label for="up3"><input id="up3" class="inline" type="checkbox" name="up3" value="3">PvP mode</label>
+  <label for="up4"><input id="up4" class="inline" type="checkbox" name="up4" value="4">Permanent banner update</label>
+  <label for="up5"><input id="up5" class="inline" type="checkbox" name="up5" value="5">New weapon types</label>
+  <label for="up6"><input id="up6" class="inline" type="checkbox" name="up6" value="6">Richer Rewards</label>
+</fieldset>
+
+<label for="suggestions">Provide any suggestions:
+          <textarea id="suggestions" name="suggestions" rows="3" cols="30"></textarea>
+        </label>
+
+        <input type="submit" id="submit"/>
+    </form>
+    </main>
+  </body>
+</html>
